@@ -1,0 +1,70 @@
+$color_blue: #112195;
+$color_gray: #efefef;
+
+.calendar-main {
+  padding: 5px;
+  width: 750px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+
+  .calendar-navigator {
+    margin-bottom: 20px;
+
+    .navigation-label {
+      margin: 10px;
+    }
+
+    .nav-anchor {
+      text-decoration: none;
+    }
+  }
+
+  .cal-cell {
+    border: 1px solid;
+    padding: 5px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    margin: 2px;
+  }
+
+  .day-label {
+    width: 100px;
+    background: $color_blue;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #000;
+  }
+
+  .day-cell {
+    height: 100px;
+    width: 100px;
+    font-size: 60%;
+
+    .date-label {
+      color: $color_blue;
+    }
+  }
+
+  .day-cell:not(.empty-cell) {
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color_gray;
+    }
+  }
+
+  .empty-cell {
+    background-color: $color_gray;
+  }
+
+  .event-title {
+    overflow: hidden;
+    width: 90%;
+    white-space: nowrap;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+  }
+}

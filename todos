@@ -1,0 +1,50 @@
+Must Before Deliver
+
+
+Good to have
+- highlight current date
+- make it look good
+- error in fetch events
+
+
+
+Edge cases:
+- semantic html
+- util classes in a separate file
+- unit tests
+- what to do when there are thousands of events to render
+- make sure it runs in all the browsers
+- all the components should have prop types and default props
+- accessibility
+- needs to look good on mobile too
+
+
+
+Unit Test Cases
+---------------------
+- Calendar should render [navigation, grid]
+- Should render some event in at least one cell
+- Prev/Next should work
+
+
+Component Structure
+-------------------------
+Calendar
+    Calendar-Header [Renders top text and navigation]
+        - Button (Left Arrow)
+        - Label (Text)
+        - Button (Right Arrow)
+    Calendar-Grid
+        GridHeader
+        GridBody
+            Cell
+        - onclick
+
+
+
+APIs
+----------
+GET
+getEvents/2017
+getEvents/2017/01
+getEvents/2017/01/28

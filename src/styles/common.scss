@@ -1,0 +1,27 @@
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.spinner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 218ms;
+
+    img {
+        width: 100px;
+    }
+}
